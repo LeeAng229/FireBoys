@@ -180,7 +180,7 @@
     "_spriteFrame": {
       "__uuid__": "cdaf7d7b-98cc-4b6d-9259-ea2e295253e7"
     },
-    "_type": 0,
+    "_type": 1,
     "_sizeMode": 1,
     "_fillType": 0,
     "_fillCenter": {
@@ -190,7 +190,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": ""
   },
@@ -295,7 +295,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": ""
   },
@@ -400,7 +400,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": ""
   },
@@ -495,7 +495,7 @@
     "_spriteFrame": {
       "__uuid__": "9dfade40-6b81-436c-89d8-58cfdf3e4c52"
     },
-    "_type": 0,
+    "_type": 1,
     "_sizeMode": 1,
     "_fillType": 0,
     "_fillCenter": {
@@ -505,7 +505,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": ""
   },
@@ -653,7 +653,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 77.85,
+      "width": 0,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -701,8 +701,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "1/99",
-    "_N$string": "1/99",
+    "_string": "",
+    "_N$string": "",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,

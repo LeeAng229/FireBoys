@@ -32,11 +32,12 @@ cc.Class({
         this.hadNum = 0;
     },
 
-    initByData(Data,itemType,shoppingNode){
+    initByData(Data,itemType,shoppingNode,itemCount){
         this.shoppingNode = shoppingNode;
         let urlKey = str[itemType].image;
         let nameKey = str[itemType].name;
         let priceKey = str[itemType].price;
+        let sellPriceKey = str[itemType].sell;
         let introduceKey = str[itemType].introduce;
 
         cc.loader.loadRes(`${Data[urlKey]}`,cc.SpriteFrame,(err,data)=>{
@@ -50,31 +51,32 @@ cc.Class({
         this.node.getChildByName('item_introduce').getComponent(cc.Label).string  = Data[introduceKey];
         this.node.active = true;
         this.node.price = Data[priceKey];
+        this.node.sellPrice = Data[sellPriceKey];
+        this.node.getChildByName('item_number').getChildByName('item_number').getComponent(cc.Label).string = itemCount;
+        cc.log(itemCount);
     },
 
     //给购买按键添加一个点击事件
-    buyBtn(){
-        //获取当前道具的价格
-        let itemPrice = Number(this.node.price);
-        //获取当前拥有的金币数量
-        cc.loader.loadRes('JSON/player',(err,data)=>{
-            if(err){
-                cc.error('player文件读取有误，请检查路径是否有误！');
-                return;
-            }
-            let coinCount = Number(data.json.playerCoinCount);
-            if(coinCount > itemPrice){
-                coinCount -= itemPrice;
-                data.json.playerCoinCount = coinCount;
-                cc.log('购买成功');
-
-                this.hadNum += 1;
-                this.refreshItemHadNum();
-            }else{
-                cc.log('金币不足，不能购买');
-            }
-            this.shoppingNode.getComponent('view_main_shopping').refreshCoinCount();
-        });
+    sellBtn(){
+        //判断当前道具数量是否大于0
+        let momentItemCount = Number(this.node.getChildByName('item_number').getChildByName('item_number').getComponent(cc.Label).string);
+        if(momentItemCount > 0){    
+            //获取当前道具的售出价格
+            let itemSellPrice = Number(this.node.sellPrice);
+            //获取当前拥有的金币数量
+            cc.loader.loadRes('JSON/player',(err,data)=>{
+                if(err){
+                    cc.error('player文件读取有误，请检查路径是否有误！');
+                    return;
+                }
+                let coinCount = Number(data.json.playerCoinCount);
+                coinCount += itemSellPrice;
+                this.node.getChildByName('item_number').getChildByName('item_number').getComponent(cc.Label).string -= 1;
+                //this.shoppingNode.getComponent('view_main_shopping').refreshCoinCount();
+            });
+        }else{
+            
+        }
     },
 
     start () {

@@ -1,3 +1,23 @@
+const str = {
+    "shopItemList":{
+        "id":"itemId",
+        "name":"itemName",
+        "rarity":"itemRarity",
+        "price":"itemPrice",
+        "sell":"itemSell",
+        "image":"itemImage",
+        "introduce":"itemIntroduce"
+    },
+    "carList":{
+        "id":"carId",
+        "name":"carName",
+        "rarity":"carRarity",
+        "price":"carPrice",
+        "image":"goodCarImage",
+        "introduce":"carIntroduce"
+    }
+}
+
 cc.Class({
     extends: cc.Component,
 
@@ -20,7 +40,6 @@ cc.Class({
         for(let i = 0;i<4;i++){
             let itemNode = cc.instantiate(this.itemPrefab);
             itemNode.parent = this.itemNodes[i];
-            cc.log(this.itemNodes[i].y);
             itemNode.active = false;
             this.unUsedNodes.push(itemNode);
         }
@@ -42,6 +61,7 @@ cc.Class({
             }
             this.jsonObj = data.json;
             self.getItemInfo();
+            this.refreshPageCount();
         });
     },
 
@@ -58,6 +78,9 @@ cc.Class({
         //     this.getItem(this.itemInfos,this.itemInfos[i][1]);
         // }
 
+        this.itemInfos = this.getItemCount(this.itemInfos);
+        cc.log(this.itemInfos);
+
         this.getItem();
     },
 
@@ -72,20 +95,20 @@ cc.Class({
         if(((itemInfo.length - 1) - this.index) >= 3){
             let count = 0;
             for(let i = this.index; i <= this.index + 3; i++){
-                this.addItem(this.unUsedNodes[count],itemInfo[i][0],itemInfo[i][1],this.node);
+                this.addItem(this.unUsedNodes[count],itemInfo[i][0],itemInfo[i][1],this.node,itemInfo[i][2]);
                 count++;
             }
         }else if(0 <= ((itemInfo.length - 1) - this.index) < 3){
             let count = 0;
             for(let i = this.index; i < itemInfo.length; i++){
-                this.addItem(this.unUsedNodes[count],itemInfo[i][0],itemInfo[i][1],this.node);
+                this.addItem(this.unUsedNodes[count],itemInfo[i][0],itemInfo[i][1],this.node,itemInfo[i][2]);
                 count++;
             }
         }
     },
 
-    addItem(itemNode,itemData,itemType,shoppingNode){
-        itemNode.getComponent('view_package_item').initByData(itemData,itemType,shoppingNode);
+    addItem(itemNode,itemData,itemType,shoppingNode,itemCount){
+        itemNode.getComponent('view_package_item').initByData(itemData,itemType,shoppingNode,itemCount);
     },
 
     exitBtn(){
@@ -98,11 +121,12 @@ cc.Class({
         this.node.getChildByName('view_main_package_right').on(cc.Node.EventType.TOUCH_END,(event)=>{
             this.state = 0;
             cc.log(this.index);
-            if(this.index + 5 <= this.itemInfos.length-1){
-                this.index += 5;
+            if(this.index + 4 <= this.itemInfos.length-1){
+                this.index += 4;
             }
             this.getItem();
             cc.log(this.index);
+            this.refreshPageCount();
         })
     },
 
@@ -110,12 +134,54 @@ cc.Class({
         this.node.getChildByName('view_main_package_left').on(cc.Node.EventType.TOUCH_END,(event)=>{
             this.state = 1;
             if(this.index > 0){
-                this.index -= 5;
+                this.index -= 4;
             }
             cc.log(this.index);
             this.getItem();
             cc.log(this.index);
+            this.refreshPageCount();
         });
+    },
+
+    refreshPageCount(){
+        //获取当前页码
+        let momentPage = Math.floor(this.index/4)+1;
+        let pageCount = Math.floor(this.itemInfos.length/4);
+        if(this.itemInfos.length - pageCount*4 > 0){
+            pageCount++;
+        }
+        this.node.getChildByName('view_main_package_pageNum').getComponent(cc.Label).string = `${momentPage}/${pageCount}`;
+    },
+
+    //统计各种item的数量
+    getItemCount(itemInfos){
+        this.finalInfos = [];
+        //遍历itemInfos，
+        for(let i in itemInfos){
+            if(this.finalInfos.length > 0){
+                let itemInfo = itemInfos[i][0];
+                let itemInfoKey = str[itemInfos[i][1]].id;
+                let itemInfoId = itemInfo[itemInfoKey];
+                //遍历this.finalInfos;
+                for(let j in this.finalInfos){
+                    let finalInfo = this.finalInfos[j][0];
+                    let finalInfoKey = str[this.finalInfos[j][1]].id;
+                    let finalInfoId = finalInfo[finalInfoKey];
+                    if(itemInfoId == finalInfoId){
+                        this.finalInfos[j][2]+=1;
+                        itemInfos[i] = null;
+                    }
+                }
+                if(itemInfos[i] != null){
+                    itemInfos[i].push(1);
+                    this.finalInfos.push(itemInfos[i]);
+                }
+            }else{
+                itemInfos[i].push(1);
+                this.finalInfos.push(itemInfos[i]);
+            }
+        }
+        return this.finalInfos;
     },
 
     start () {

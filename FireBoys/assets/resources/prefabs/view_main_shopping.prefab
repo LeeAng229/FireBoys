@@ -79,13 +79,13 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 75.84,
+      "y": 0,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 1.3,
+      "y": 1.3,
       "z": 1
     },
     "_eulerAngles": {
@@ -299,7 +299,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": ""
   },
@@ -404,7 +404,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": ""
   },
@@ -951,7 +951,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": ""
   },
@@ -1004,7 +1004,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -88.024,
+      "x": -219,
       "y": -527.636,
       "z": 0
     },
@@ -1056,7 +1056,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": ""
   },
@@ -1109,7 +1109,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 98.125,
+      "x": 219,
       "y": -527.938,
       "z": 0
     },
@@ -1161,7 +1161,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": ""
   },
