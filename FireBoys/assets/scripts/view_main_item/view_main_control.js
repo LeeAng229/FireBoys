@@ -3,7 +3,9 @@ cc.Class({
 
     properties: {
         openShoppingBtn:cc.Node,
-        shoppingPre:cc.Prefab
+        shoppingPre:cc.Prefab,
+        openPackageBtn:cc.Node,
+        packagePre:cc.Prefab
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -18,7 +20,18 @@ cc.Class({
             }else{
                 this.shoppingArr[0].active = true;
             }
-        })
+        });
+
+        this.packageArr = [];
+        this.openPackageBtn.on(cc.Node.EventType.TOUCH_END,(event)=>{
+            if(this.packageArr.length<1){
+                let packageNode = cc.instantiate(this.packagePre);
+                packageNode.parent = this.node.getChildByName('view_main_package');
+                this.packageArr.push(packageNode);
+            }else{
+                this.packageArr[0].active = true;
+            }
+        });
     },
 
     start () {
