@@ -53,7 +53,6 @@ cc.Class({
         this.node.price = Data[priceKey];
         this.node.sellPrice = Data[sellPriceKey];
         this.node.getChildByName('item_number').getChildByName('item_number').getComponent(cc.Label).string = itemCount;
-        cc.log(itemCount);
     },
 
     //给购买按键添加一个点击事件
