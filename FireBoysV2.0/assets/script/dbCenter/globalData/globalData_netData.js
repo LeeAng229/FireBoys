@@ -1,0 +1,10 @@
+//存储网络数据
+window.netData={};
+netData.coinNumbers=null;
+netData.Prestige=null;
+netData.teamDataList=null;
+netData.taskDataList=null;
+netData.questionDataList=null;
+netData.itemList=null;
+netData.carList=null;
+netData.bagData=null;

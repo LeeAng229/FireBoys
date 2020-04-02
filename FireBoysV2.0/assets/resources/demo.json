@@ -1,0 +1,449 @@
+{
+  "coinNumbers": "100",
+  "Prestige": "100",
+  "teamDataList": [
+    {
+      "playerId": "1001",
+      "type": "team",
+      "rarity": "N",
+      "playerType": "string",
+      "playerImg": "string",
+      "playerName": "一级消防员",
+      "playerIntroduce": "这是一级消防员",
+      "isMake": "0",
+      "isFirstMake": "0",
+      "playerLevel": "1",
+      "divisionIntroduce": "introduction",
+      "playerLevelData": {
+        "level1": {
+          "level": "1",
+          "reduceCoin": "100",
+          "getSkill": "绝杀"
+        },
+        "level2": {
+          "level": "1",
+          "reduceCoin": "100",
+          "getSkill": "string"
+        },
+        "level3": {
+          "level": "1",
+          "reduceCoin": "100",
+          "getSkill": "string"
+        },
+        "level4": {
+          "level": "1",
+          "reduceCoin": "100",
+          "getSkill": "string"
+        },
+        "level5": {
+          "level": "1",
+          "reduceCoin": "100",
+          "getSkill": "string"
+        }
+      }
+    }
+  ],
+  "taskDataList": [
+    [
+      {
+        "taskId": "3001",
+        "isStart": "0",
+        "rarity": "N",
+        "taskImg": "10001",
+        "taskName": "name",
+        "taskPosX": "100",
+        "taskPosY": "200",
+        "introduce": "本任务需要一级消防车，一级消防员，需要道具梯子",
+        "taskArea": "string",
+        "taskOdds": "1",
+        "taskPrestige": "1",
+        "carId": "1",
+        "carDurability": "1",
+        "playerId": "1001",
+        "playerLevel": "100",
+        "prop": [
+          {
+            "propId": "1",
+            "propNum": "100"
+          }
+        ],
+        "needTime": "100",
+        "rewardCoin": "100",
+        "rewardPrestige": "100",
+        "startTime": "1",
+        "endTime": "2"
+      },
+      {
+        "taskId": "1001",
+        "isStart": "0",
+        "rarity": "N/R",
+        "taskImg": "10001",
+        "taskName": "name",
+        "taskPosX": "dhsa",
+        "taskPosY": "gsdakf",
+        "introduce": "introduce",
+        "taskArea": "string",
+        "taskOdds": "1",
+        "taskPrestige": "1",
+        "carId": "1",
+        "carDurability": "1",
+        "playerId": "1",
+        "playerLevel": "100",
+        "prop": [
+          {
+            "propId": "1",
+            "propNum": "100"
+          }
+        ],
+        "needTime": "100",
+        "rewardCoin": "100",
+        "rewardPrestige": "100",
+        "startTime": "1",
+        "endTime": "2"
+      }
+    ]
+  ],
+  "itemList": [
+    {
+      "itemId": "4001",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4002",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子1",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子1，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4003",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子2",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子2，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4004",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子3",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子3，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4005",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子4",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子4，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4006",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子5",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子5，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4007",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子6",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子6，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4008",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子7",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子7，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4009",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子8",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子8，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4010",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子9",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子9，它的作用是用来爬墙的"
+    },
+    {
+      "itemId": "4011",
+      "type": "item",
+      "ismake": "0",
+      "itemCount": 0,
+      "itemName": "梯子10",
+      "itemRarity": "N",
+      "itemPrice": 1,
+      "itemSell": 1,   
+			"itemImage":"images/daoju/daoju1", 
+      "itemIntroduce": "这件道具的名称是梯子10，它的作用是用来爬墙的"
+    }
+  ],
+  "carList": [
+    {
+      "carId": "5001",
+      "type": "car",
+      "carName": "一级消防车",
+      "carIntroduce": "这是一级消防车",
+      "carPrice": "0",
+      "carEarn": "50",
+      "carEarnLimit": "500",
+      "carDurability": "100",
+      "repairPrice": "1",
+      "reduceDurability": "1",
+      "addDurability": "1",
+      "needCoin": "500",
+      "isFirstMake": "1",
+      "isMake": "0",
+      "goodCarImage": "string",
+      "badCarImage": "string"
+    },
+    {
+      "carId": "1",
+      "type": "car",
+      "carName": "消防车1",
+      "carIntroduce": "string",
+      "carPrice": "1000",
+      "carEarn": "65",
+      "carEarnLimit": "500",
+      "carDurability": "80",
+      "repairPrice": "1",
+      "reduceDurability": "1",
+      "addDurability": "1",
+      "needCoin": "500",
+      "isFirstMake": "0",
+      "isMake": "0",
+      "goodCarImage": "string",
+      "badCarImage": "string"
+    },
+    {
+      "carId": "2",
+      "type": "car",
+      "carName": "消防车1",
+      "carIntroduce": "string",
+      "carPrice": "0",
+      "carEarn": "50",
+      "carEarnLimit": "500",
+      "carDurability": "100",
+      "repairPrice": "1",
+      "reduceDurability": "1",
+      "addDurability": "1",
+      "needCoin": "500",
+      "isFirstMake": "1",
+      "isMake": "1",
+      "goodCarImage": "string",
+      "badCarImage": "string"
+    }
+  ],
+  "bagData": [
+  ],
+  "questionDataList": [
+    {
+      "qustionId": "1001",
+      "type": "常识",
+      "questions": "小明同学家住在5楼，有一天楼下3楼的邻居家突然起火，小明发现楼道里都是烟，情急之下就从窗户顺着管道往下跳，这样做是否正确？",
+      "answerA": "正确",
+      "answerB": "不正确",
+      "rightAnswer": "不正确",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1002",
+      "type": "常识",
+      "questions": "小明的妈妈在一栋50层高的写字楼办公，有天他跟随妈妈到工作的写字楼取东西，突遇10楼起火，小明和妈妈应该怎么做？",
+      "answerA": "迅速躲避到楼上的避难层，报警求援",
+      "answerB": "顺着楼梯往下跑",
+      "answerC": "大声呼救，就地等待救援",
+      "rightAnswer": "迅速躲避到楼上的避难层，报警求援",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1003",
+      "type": "常识",
+      "questions": "身上着火怎么做？",
+      "answerA": "快速奔跑，寻找水源",
+      "answerB": "原地打转，大声呼救",
+      "answerC": "设法脱掉衣服，或地翻滚按压火苗",
+      "rightAnswer": "设法脱掉衣服，或地翻滚按压火苗",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1004",
+      "type": "常识",
+      "questions": "邻居为了防盗，把楼梯间的门锁住了，这样做是否正确？",
+      "answerA": "正确",
+      "answerB": "不正确",
+      "rightAnswer": "不正确",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1005",
+      "type": "常识",
+      "questions": "火灾隐患举报投诉电话是多少",
+      "answerA": "110",
+      "answerB": "119",
+      "answerC": "96119",
+      "rightAnswer": "119",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1006",
+      "type": "常识",
+      "questions": "火灾疏散演习时，明宝返回火场取玩具“乐羊羊”，这个做法对不对？",
+      "answerA": "对",
+      "answerB": "不对",
+      "rightAnswer": "不对",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1007",
+      "type": "常识",
+      "questions": "妈妈做饭时，把面粉放在点着火的炉灶旁边，这个做法对不对？",
+      "answerA": "对",
+      "answerB": "不对",
+      "rightAnswer": "不对",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1008",
+      "type": "常识",
+      "questions": "火灾中引起人员大量伤亡的主要原因是",
+      "answerA": "互相挤压致死",
+      "answerB": "吸入烟气窒息死亡",
+      "answerC": "被火烧死",
+      "rightAnswer": "吸入烟气窒息死亡",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1009",
+      "type": "常识",
+      "questions": "发生火灾时，下列做法正确的是",
+      "answerA": "不能随便开启门窗",
+      "answerB": "只能开门",
+      "answerC": "只能开窗",
+      "rightAnswer": "不能随便开启门窗",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1010",
+      "type": "常识",
+      "questions": "消防车和消火栓的颜色是",
+      "answerA": "白色",
+      "answerB": "黄色",
+      "answerC": "红色",
+      "rightAnswer": "红色",
+      "getPrestige":"1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1011",
+      "type": "常识",
+      "questions": "油锅起火正确的扑救方法",
+      "answerA": "用水泼灭",
+      "answerB": "用锅盖盖严窒息灭火",
+      "rightAnswer": "用水泼灭",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1012",
+      "type": "常识",
+      "questions": "使用电熨斗时，下列做法正确的是",
+      "answerA": "开着电熨斗，然后去做别的事",
+      "answerB": "用完及时关闭电源",
+      "answerC": "电熨斗的温度控制器失灵仍然继续使用",
+      "rightAnswer": "用完及时关闭电源",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1013",
+      "type": "常识",
+      "questions": "电热毯第一次使用或长期搁置后再使用，应在有人监视的情况下先通电( )左右，检查是否安全",
+      "answerA": "30分钟",
+      "answerB": "45分钟",
+      "answerC": "1小时",
+      "rightAnswer": "1小时",
+      "getPrestige": "1",
+      "getCoin": "1"
+    },
+    {
+      "qustionId": "1014",
+      "type": "常识",
+      "questions": "发现燃气泄漏，以下做法正确的是",
+      "answerA": "打开油烟机排出泄漏气体",
+      "answerB": "开窗通风",
+      "answerC": "在室内拨打电话报警",
+      "rightAnswer": "开窗通风",
+      "getPrestige": "1",
+      "getCoin": "1"
+    }
+  ]
+}
